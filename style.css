@@ -1,13 +1,4 @@
-h1,h2,h3,h4,h5,h6,a{
-    font-family: 'Rubik', sans-serif;
-}
-body,span p{
-    font-family: 'Roboto', sans-serif;
-}
-/* Header-section */
-.header-section{
-    background-color: green;
-}h1,
+h1,
 h2,
 h3,
 h4,
@@ -102,12 +93,3 @@ span p {
     padding: 9px 30px;
     border-radius: 5px;
 }
-
-.header-logo{}
-.header-logo img{}
-.header-right{}
-.header-menu{}
-.header-menu ul{}
-.header-menu ul li{}
-.header-menu ul li a{}
-.header-menu ul li a:hover{}
