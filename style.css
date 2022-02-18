@@ -7,7 +7,102 @@ body,span p{
 /* Header-section */
 .header-section{
     background-color: green;
+}h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: "Rubik", sans-serif;
 }
+body,
+span p {
+    font-family: "Roboto", sans-serif;
+}
+/* Header-section */
+.header-section {
+    background-color: green;
+    /*! display: flex; */
+    /*! align-items: center; */
+    padding: 10px 0;
+}
+.header-logo {
+}
+.header-logo img {
+    /*! margin-top: 5px; */
+}
+.header-righ {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header-menu {
+}
+.header-menu ul {
+    display: flex;
+    padding: 0;
+    /*! align-items: flex-end; */
+    align-self: center;
+    margin-top: 13px;
+}
+.header-menu ul li {
+    list-style: none;
+    padding: ;
+}
+.header-menu ul li a {
+    color: black;
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 12px;
+}
+.header-menu ul li a:hover {
+}
+.call-div {
+    display: flex;
+    /*! align-items: center; */
+    width: 276px;
+}
+
+.call-div span {
+    font-size: 25px;
+    margin-left: 15px;
+    margin-right: 10px;
+    color: #e73c3e;
+}
+
+.call-div h6 {
+    color: #ddd;
+    font-size: 18px;
+    width: 79px;
+    display: block;
+}
+.call-div h5 {
+    position: relative;
+    top: 23px;
+    left: -87px;
+    color: #111;
+    font-size: 20px;
+    font-weight: 400;
+}
+.icon-div span {
+    font-size: 25px;
+    border-right: 1px solid yellow;
+    width: 50px;
+    display: inline-block;
+    margin-left: 15px;
+}
+.header-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    display: inline-block;
+    background: #e73c3e;
+    padding: 9px 30px;
+    border-radius: 5px;
+}
+
 .header-logo{}
 .header-logo img{}
 .header-right{}
