@@ -80,7 +80,7 @@ span p {
     margin-left: 15px;
 }
 .header-menu ul li ul li a:hover {
-    font-size: 20px;
+    letter-spacing: 2px;
 }
 .call-div span {
     font-size: 25px;
@@ -346,13 +346,13 @@ span p {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    transition: .5s;
+    transition: 0.5s;
 }
-.experience-box:hover{
+.experience-box:hover {
     transform: translateY(-15px);
 }
-.experience-box:hover span{
-    background-color:#e73c3e;
+.experience-box:hover span {
+    background-color: #e73c3e;
     color: white;
 }
 .experience-box::after {
@@ -390,55 +390,178 @@ span p {
     font-weight: 400;
     line-height: 1.8;
 }
-.mts{
+.mts {
     margin-top: -30px;
 }
 .experience-banner span {
-	font-size: 60px;
-	color: #e73c3e;
-	display: inline-block;
-	background: white;
-	width: 90px;
-	height: 90px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 90px;
-	position: absolute;
-	right: 170px;
-	bottom: 54px;
-    transition: .5s;
+    font-size: 60px;
+    color: #e73c3e;
+    display: inline-block;
+    background: white;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 90px;
+    position: absolute;
+    right: 170px;
+    bottom: 54px;
+    transition: 0.5s;
 }
-.experience-banner span:hover{
+.experience-banner span:hover {
     color: white;
     background-color: #e73c3e;
 }
 .experience-banner span::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 90px;
-	height: 90px;
-	background: red;
-	border-radius: 50%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 90px;
+    background: red;
+    border-radius: 50%;
     animation: arman 1.6s infinite;
 }
-@keyframes arman{
-    0%{
+@keyframes arman {
+    0% {
         transform: scale(0);
         opacity: 1;
     }
-    30%{
+    30% {
         transform: scale(0);
         opacity: 1;
     }
-    50%{
+    50% {
         transform: scale(1.5);
-        opacity: .7;
+        opacity: 0.7;
     }
-    100%{
+    100% {
         transform: scale(2);
         opacity: 0;
     }
+}
 
+/* Contack-section */
+.contack-form {
+    background-color: #fdebeb;
+    padding: 50px;
+}
+.contack-form p {
+    color: #606060;
+    font-weight: 400;
+    text-align: center;
+}
+.contack-form h3 {
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+}
+.stepssteps-head h3 {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.steps-menu {
+}
+.steps-menu ul {
+    position: relative;
+    margin-left: 21px;
+}
+.steps-menu ul::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: calc(100% - 59px);
+    background: #e73c3e;
+}
+.steps-menu ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 15px;
+}
+.steps-menu ul li::before {
+    content: attr(data-arman);
+}
+.steps-menu ul li h4 {
+    margin-bottom: 10px;
+    color: #111;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.steps-menu ul li p {
+    color: #606060;
+    line-height: 1.8;
+    font-weight: 400;
+}
+.steps-menu ul li::before {
+    content: attr(data-arman);
+    position: absolute;
+    top: 0;
+    left: -52px;
+    width: 40px;
+    height: 40px;
+    background: #f9fafb;
+    border: 1px solid #e73c3e;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+.custom-in {
+    padding: 13px;
+}
+.custom-in:focus {
+    outline: 0 !important;
+}
+
+/* discuss-Section */
+
+.discuss {
+    margin: 100px 0;
+}
+.discuss-bode {
+    background: #e73c3e;
+    color: white;
+    padding: 65px 50px 65px 50px;
+    border-radius: 5px;
+}
+.discuss-left {
+    position: relative;
+}
+.discuss-left::before {
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 1px;
+    content: "";
+    height: 85px;
+    background-color: #f39e9f;
+}
+.discuss-left h3 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.discuss-right span {
+    color: #e73c3e;
+    background: white;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.discuss-right a {
+    font-size: 33px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 19px;
+    text-decoration: none;
 }
