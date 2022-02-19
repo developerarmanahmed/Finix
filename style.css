@@ -19,7 +19,6 @@ span p {
 .header-logo {
 }
 .header-logo img {
-
 }
 .header-righ {
     display: flex;
@@ -36,6 +35,7 @@ span p {
 }
 .header-menu ul li {
     list-style: none;
+    position: relative;
 }
 .header-menu ul li a {
     color: black;
@@ -43,14 +43,45 @@ span p {
     display: inline-block;
     text-decoration: none;
     padding: 0 12px;
+    transition: 0.5s;
 }
-.header-menu ul li a:hover {
+.acti {
+    color: #e73c3e !important;
+}
+.header-menu ul li:hover > a {
+    color: #e73c3e;
 }
 .call-div {
     display: flex;
     width: 276px;
 }
-
+.header-menu ul li ul {
+    position: absolute;
+    top: 170%;
+    left: 0;
+    width: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    margin-top: 0;
+    transition: 0.5s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.header-menu ul li:hover ul {
+    transform: scaleY(1);
+}
+.header-menu ul li ul li {
+}
+.header-menu ul li ul li a {
+    line-height: 45px;
+    margin-left: 15px;
+}
+.header-menu ul li ul li a:hover {
+    font-size: 20px;
+}
 .call-div span {
     font-size: 25px;
     margin-left: 15px;
@@ -72,7 +103,7 @@ span p {
     font-size: 20px;
     font-weight: 400;
 }
-.call-div h5:hover{
+.call-div h5:hover {
     cursor: pointer;
 }
 .icon-div span {
@@ -81,6 +112,7 @@ span p {
     width: 50px;
     display: inline-block;
     margin-left: 15px;
+    cursor: pointer;
 }
 .header-button a {
     color: white;
@@ -90,129 +122,130 @@ span p {
     background: #e73c3e;
     padding: 9px 30px;
     border-radius: 5px;
-    transition: .5s;
+    transition: 0.5s;
     position: relative;
     z-index: 1;
 }
 
-.header-button a::after{
+.header-button a::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width:0;
+    width: 0;
     height: 100%;
     background: black;
-    transition: .5s;
+    transition: 0.5s;
     border-radius: 5px;
     z-index: -1;
 }
-.header-button a:hover::after{
+.header-button a:hover::after {
     width: 100%;
 }
-.header-button a:hover{
+.header-button a:hover {
     color: white;
 }
 /* Slider-section */
 
 .slider {
-	background: url(https://i.ibb.co/CVqzszB/main-banner2.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+    background: url(https://i.ibb.co/CVqzszB/main-banner2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: top center;
+    background-attachment: fixed;
 }
 .slider-content {
-	display: flex;
-	flex-direction: column;
-	margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
 }
 .slider-content h6 {
-	color: #e73c3e;
-	font-size: 18px;
-	font-weight: 400;
-	margin-bottom: 20px;
+    color: #e73c3e;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 .slider-content h1 {
-	font-size: 67px;
-	color: #111;
-	font-weight: 500;
-	width: 631px;
-	margin-bottom: 15px;
+    font-size: 67px;
+    color: #111;
+    font-weight: 500;
+    width: 631px;
+    margin-bottom: 15px;
 }
 .slider-content p {
-	color: #606060;
-	font-size: 18px;
-	width: 650px;
-	line-height: 1.8;
-	font-weight: 400;
+    color: #606060;
+    font-size: 18px;
+    width: 650px;
+    line-height: 1.8;
+    font-weight: 400;
 }
 .slider-botton a {
-	color: white;
-	text-decoration: none;
-	font-size: 21px;
-	display: inline-block;
-	background: #e73c3e;
-	padding: 9px 30px;
-	border-radius: 5px;
-	transition: .5s;
-	margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    display: inline-block;
+    background: #e73c3e;
+    padding: 9px 30px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 20px;
     position: relative;
     z-index: 1;
 }
-.slider-botton a::after{
+.slider-botton a::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width:0;
+    width: 0;
     height: 100%;
     background: black;
-    transition: .5s;
+    transition: 0.5s;
     border-radius: 5px;
     z-index: -1;
-
 }
-.slider-botton a:hover::after{
+.slider-botton a:hover::after {
     width: 100%;
 }
 
-.slider-icon{
+.slider-icon {
     position: relative;
 }
 .slider-icon::before {
-	content: "";
-	position: absolute;
-	top: 10px;
-	left: 111px;
-	width: 40px;
-	height: 2px;
-	background: #111;
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 111px;
+    width: 40px;
+    height: 2px;
+    background: #111;
 }
 .slider-icon ul {
-	list-style: none;
-	margin-top: 150px;
+    list-style: none;
+    margin-top: 150px;
 }
-.slider-icon ul li{}
-.slider-icon li:nth-child(1){
+.slider-icon ul li {
+}
+.slider-icon li:nth-child(1) {
     margin-right: 55px;
     margin-top: -1px;
-
 }
-.slider-icon ul li span{}
+.slider-icon ul li span {
+}
 .slider-icon ul li a {
-	display: inline-block;
-	color: #111;
-	padding: 0 15px;
-    transition: .5s;
+    display: inline-block;
+    color: #111;
+    padding: 0 15px;
+    transition: 0.5s;
 }
-.slider-icon ul li a:hover{
+.slider-icon ul li a:hover {
     color: #e73c3e;
 }
 
 .data-start {
-	margin-top: 111px;
-	border-bottom: 1px solid #e5e5e5;
-	padding-bottom: 111px;
+    margin-top: 111px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 111px;
 }
 
 /* About-Section */
@@ -223,7 +256,7 @@ span p {
 .about-banner {
     position: relative;
 }
-.about-shop{
+.about-shop {
     background: url(https://i.ibb.co/jLNxYYx/shape.png);
     background-repeat: no-repeat;
     width: 200px;
@@ -235,18 +268,18 @@ span p {
     right: 50px;
 }
 .about-shop h3 {
-	font-size: 70px;
-	color: #e73c3e;
-	text-align: center;
-	margin: 50px 0 5px 0;
-	line-height: 1;
-	font-weight: 500;
+    font-size: 70px;
+    color: #e73c3e;
+    text-align: center;
+    margin: 50px 0 5px 0;
+    line-height: 1;
+    font-weight: 500;
 }
 .about-shop span {
-	text-align: center;
-	display: block;
-	font-weight: 500;
-	color: #111;
+    text-align: center;
+    display: block;
+    font-weight: 500;
+    color: #111;
 }
 .about-content {
 }
@@ -277,8 +310,8 @@ span p {
 .about-menu {
 }
 .about-menu ul {
-	margin: 20px 0 21px 0;
-	padding: 0;
+    margin: 20px 0 21px 0;
+    padding: 0;
 }
 .about-menu ul li {
     list-style: none;
@@ -293,4 +326,70 @@ span p {
     position: absolute;
     top: 0;
     left: 2px;
+}
+/* Experience-Section */
+
+.experience-section {
+    background-color: #f9fafb;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.experience-banner {
+    margin-top: 45px;
+    position: relative;
+}
+
+.experience-box {
+    background: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.experience-box:hover{
+    transform: translateY(-15px);
+}
+.experience-box:hover span{
+    background-color:#e73c3e;
+    color: white;
+}
+.experience-box::after {
+    content: "";
+    position: absolute;
+    top: -147px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 230px;
+    height: 230px;
+    background: #fdebeb;
+    border-radius: 50%;
+    z-index: -1;
+}
+.experience-box span {
+    display: inline-block;
+    color: #e73c3e;
+    margin-bottom: 20px;
+    background: white;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 50%;
+    font-size: 45px;
+}
+.experience-box h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #111;
+    font-weight: 500;
+}
+.experience-box p {
+    color: #606060;
+    font-weight: 400;
+    line-height: 1.8;
+}
+.mts{
+    margin-top: -30px;
 }
