@@ -11,6 +11,9 @@ body,
 span p {
     font-family: "Roboto", sans-serif;
 }
+img{
+    max-width: 100%;
+}
 /* Header-section */
 .header-section {
     background-color: rgb(255, 255, 255);
@@ -564,4 +567,127 @@ span p {
     font-weight: 500;
     margin-left: 19px;
     text-decoration: none;
+}
+
+
+/* Talent-Section */
+
+
+.talent-left h4 {
+	font-size: 25px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	color: #111;
+}
+.talent-left {
+	display: flex;
+}
+.talent-icon span {
+	font-size: 50px;
+	color: #e73c3e;
+	display: block;
+	width: 80px;
+}
+.talent-tex p{
+	color: #606060;
+	font-weight: 400;
+	line-height: 1.8;
+}
+.talent-rigth img {
+	max-width: 100%;
+	margin-top: 13px;
+	height: 360px;
+}
+
+/* knowledge-section */
+
+.knowledge-section{
+    background: #f9fafb;
+}
+
+
+/* start */
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 0;
+	/* margin-bottom: 0; */
+	list-style: none;
+	justify-content: center !important;
+}
+.youngest-ula{
+    position: relative;
+}
+.youngest-ula::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: #ddd;
+	width: 1041px;
+	height: 2px;
+	margin: auto;
+	left: 0;
+}
+.youngest span {
+	height: 70px;
+	width: 70px;
+	color: #606060;
+	background: #fff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	font-size: 35px;
+	margin: auto;
+	box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+	display: inline-block;
+}
+.youngest h4 {
+	display: block;
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 20px;
+	padding-bottom: 30px;
+	color: #111;
+}
+.nav-pills .nav-link.active{
+    border-bottom: 4px solid #e73c3e !important;
+    z-index: 1;
+}
+.nav-pills .nav-link.active span {
+	color:#e73c3e;
+}
+.nav-pills .nav-link {
+	background: 0 0;
+	border: 0;
+	border-radius: 0 !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	/* color: #fff; */
+	background: #f9fafb !important;
+}
+.nav-link {
+	display: block;
+	padding: .5rem 1rem;
+	text-decoration: none;
+	transition: none !important;
+}
+.payday-menu ul {
+	padding: 0;
+}
+.payday-menu ul li {
+	list-style: none;
+	position: relative;
+	color: #606060;
+	padding-left: 25px;
+}
+.payday-menu ul li::before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	width: 10px;
+	height: 10px;
+	background: #e73c3e;
+	border-radius: 50%;
+	left: 1px;
 }
